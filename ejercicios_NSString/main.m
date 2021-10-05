@@ -108,7 +108,8 @@ int main(int argc, const char * argv[]) {
 
         //20. Sumar 5 al NSNumber puesto
         
-        puesto = puesto +@5;
+        puesto = [NSNumber numberWithInt:[puesto intValue]+5 ];
+
         NSLog(@"Ahora el puesto es: %@",puesto);
         
     }
